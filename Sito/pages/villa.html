@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Metadati per il documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Panza - Villa</title>
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Contenitore principale -->
+    <div class="pageContainer">
+        <div class="container">
+            <div class="container_navbar">
+                <!-- MENU LATERALE -->
+                <div id="navbar">
+                    <a href="home.html">  Home</a> <!-- Alt+255 per carattere invisibile -->
+                    <a href="villa.html">Villa</a>
+                    <a href="collezione.html">Collezioni</a>
+                    <a href="visita.html">Visita</a>
+                    <a href="contatti.html">Contatti</a>
+                </div>
+            </div>
+        </div>
+        <button class="btn" style="position: fixed; right: 0%; top: 0%; z-index: 20;" onclick="toggleDark()">Passa alla modalità </br> chiara/scura</button>
+        <div class="container3">
+            <!-- TITOLO -->
+            <div class="header" style="padding-left: 3%;">
+                <h1>Villa</h1>
+            </div>
+
+            <!-- citazione  -->
+            <div class="quotes">
+                <blockquote class="custom-quote">
+                    Era un luogo magico dove la realtà si trasformava nella bellezza totale dell’idea. Le caratteristiche che più mi colpivano erano il giardino, la luce, l’orizzonte visibile in tutte le direzioni. Era un grande spazio verde sospeso tra cielo e terra.
+                </blockquote>
+            </div>
+            <!-- Immagine villa e descrizione -->
+            <div class="content">
+                <img src="../immagini/villaesterno.jpg" alt="Villa esterno" class="float-right">
+                <div class="description">
+                    <h2>Storia e trasformazioni della villa</h2>
+                    <p>Villa Menafoglio Litta Panza è situata sulla collina di Biumo Superiore a Varese. Dal 1996 proprietà del FAI, aperta al pubblico nel 2000, deve il suo aspetto attuale a diverse trasformazioni. Il museo comprende il piano terra e il primo piano della villa costruita nel 1748 dai Menafoglio come residenza di delizia con pianta a "U" rivolta verso il giardino.</p>
+                    
+                    <h2>Ampliamenti</h2>
+                    <p>Ampliata nel 1829 dalla famiglia Litta con l'aggiunta del salone impero al piano terra, si configura nel suo aspetto attuale nel 1935 grazie all'intervento dell'architetto Portaluppi per la famiglia di Giuseppe Panza, ultimo proprietario della casa, che vi colloca la sua collezione di 137 opere d'arte contemporanea e primaria africana e precolombiana, costituite dal 1958 al 1996.</p>
+                    
+                    <h2>Restauri e museo</h2>
+                    <p>Fanno parte del museo anche i rustici e le scuderie ottocentesche restaurate nel 1996 da Gae Aulenti, oggi adibite all'esposizione dell'arte ambientale della collezione Panza e alle mostre temporanee, e un grande parco all'italiana e all'inglese. L'intero complesso è stato donato al Fondo Ambiente Italiano nel 1996 da Giuseppe Panza, che ha curato ogni aspetto della musealizzazione, dal percorso di visita all'allestimento delle opere: criterio generale è di riservare un ambiente per ciascun artista, permettendo al visitatore un'immedesimazione totale nella sua poetica, facendo interagire con studiato equilibrio le opere d'arte contemporanea con gli arredi e con l'architettura e privilegiando l'illuminazione naturale a quella artificiale come fonte più idonea per valorizzare i cromatismi delle opere.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- FOOTER -->
+        <div class="footer">
+            <p style="margin: 0%;">Realizzato da Michela Salerno</p>
+        </div>
+        <style>
+            .footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #70a0b1;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </div>
+
+<!-- Scripts -->
+    <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/darkMode.js"></script>
+</body>
+</html>

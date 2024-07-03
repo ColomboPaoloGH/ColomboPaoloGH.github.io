@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Panza - Contatti</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="pageContainer">
+      <div class="container">
+        <div class="container_navbar">
+            <div id="navbar">
+                <a href="home.html">  Home</a> <!-- Alt+255 per carattere invisibile -->
+                <a href="villa.html">Villa</a>
+                <a href="collezione.html">Collezioni</a>
+                <a href="visita.html">Visita</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+          </div>
+      </div>
+      <button class="btn" style="position: fixed; right: 0%; top: 0%; z-index: 20;" onclick="toggleDark()">Passa alla modalità </br> chiara/scura</button>
+      <div class="container3">
+          <div class="header" style="padding-left: 3%;">
+              <h1>Contatti</h1>
+          </div>
+      </div>
+
+      <!-- Contatti -->
+      <div class="containerC">
+          <div style="text-align:center">
+            <h1>I nostri recapiti</h1>
+            <p>Telefono: 0332 283960</p>
+            <p>e-mail: faibiumo@fondoambiente.it</p>
+          </div>
+          <div class="rowC">
+            <div class="columnC">
+              <img src="../immagini\Villa-Panza-a-Varese.jpg" style="width:100%">
+              <p style="text-align: center; margin-bottom: 0 ;">Oppure lasciaci un messaggio qui sotto:</p>
+            </div>
+            
+            <div class="columnC" style="padding-top: 0;">
+                <label for="Nome">Nome</label>
+                    <input type="text" id="Nome" name="Nome" placeholder="Il tuo nome...">
+                <label for="Cognome">Cognome</label>
+                    <input type="text" id="Cognome" name="Cognome" placeholder="Il tuo cognome...">
+                <label for="Email">Email</label>
+                    <input type="text" id="" name="Email" placeholder="La tua mail...">
+                <label for="Messaggio">Messaggio</label>
+                <textarea id="Messaggio" name="Messaggio" placeholder="Scrivi il tuo messaggio..." style="height:170px"></textarea>
+                    <input type="Invia" value="Invia">
+            </div>
+          </div>
+      </div>  
+          
+      
+
+  <!-- FOOTER -->
+      <div class="footer">
+          <p style="margin: 0%;">Realizzato da Michela Salerno</p>
+      </div>
+      <style>
+          .footer {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: #70a0b1;
+              color: white;
+              text-align: center;
+          }
+      </style>
+    </div>
+
+    <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/darkMode.js"></script>
+    <script src="../javascript/animationButton.js"></script>
+</body>
+</html>

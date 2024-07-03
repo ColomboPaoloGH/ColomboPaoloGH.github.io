@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Panza - Visita</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="container">
+            <div class="container_navbar">
+                <div id="navbar">
+                    <a href="home.html">  Home</a> <!-- Alt+255 per carattere invisibile -->
+                    <a href="villa.html">Villa</a>
+                    <a href="collezione.html">Collezioni</a>
+                    <a href="visita.html">Visita</a>
+                    <a href="contatti.html">Contatti</a>
+                </div>
+            </div>
+        </div>
+        <button class="btn" style="position: fixed; right: 0%; top: 0%; z-index: 20;" onclick="toggleDark()">Passa alla modalità </br> chiara/scura</button>
+        <div class="container3">
+            <div class="header" style="padding-left: 3%;">
+                <h1>Visita</h1>
+            </div>
+
+            <div class="content" style="width: 100%;"> 
+                <!-- Mappa OpenStreet -->
+                <div class="mapContainer">
+                    <iframe width=100% height="515vh" src="https://www.openstreetmap.org/export/embed.html?bbox=8.828375637531282%2C45.824491096093915%2C8.829512894153597%2C45.82550788830955&amp;layer=mapnik" >
+                    </iframe>
+                    <br/><small><a href="https://www.openstreetmap.org/#map=19/45.82500/8.82894">Visualizza mappa ingrandita</a></small>
+                </div>
+                <!-- Orari visita -->
+                <div class="mapContainer2">
+                    <h3 style="margin-top: 0% ;">Orari di apertura:</h3>
+                    <p style="width: 90%;">Da martedì a domenica: <b>ore 10:00 - 18:00</b> <u>(ultimo ingresso 45 minuti prima della chiusura)</u>.</p>
+                    <p>Lunedì: <b>chiuso</b></p>
+                    </br>
+                    <h3 style="margin-top: 0% ;">Acquista un biglietto d'ingresso:</h3>                            
+                    <div class="accordion">
+                        
+                            <button class="accordion-button">Biglietti</button>
+                            <div class="accordion-content">
+                                <p>Acquista il biglietto online: è sicuro, veloce e senza costi aggiuntivi, <a href="https://www.cognitoforms.com/fai11/villaecollezionepanza2">clicca qui.</a></p>
+                                <h3>Visita libera alla VILLA, PARCO e MOSTRA</h3>
+                                <ul>
+                                    <li>Iscritti FAI: <b>5€</b></li>
+                                    <li>Intero: <b>15€</b></li>
+                                    <li>Ridotto (6 - 18 anni): <b>10€</b></li>
+                                    <li>Studenti fino ai 25 anni: <b>10€</b></li>
+                                    <li>Famiglia (2 adulti e figli 6-18 anni): <b>40€</b></li>
+                                    <li>Bambini fino ai 5 anni: <b>gratis</b></li>
+                                    <li><b>Riduzione</b> per Abitanti di Varese</li>
+                                    <li>Soci INTO, Soci Mécènes e Soci Bienfaiteurs Amis du Louvre: <b>5€</b></li>
+                                    <li>Persone con disabilità e accompagnatore: <b>gratis</b></li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p style="margin: 0%;">Realizzato da Michela Salerno</p>
+        </div>
+        <!-- Stile per il footer -->
+        <style>
+            .footer {
+                position: absolute;
+                left: 0;
+                bottom: 0vh;
+                width: 100%;
+                background-color: #70a0b1;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../javascript/navbar.js"></script> <!-- Script navbar -->
+    <script src="../javascript/scriptsvisita.js"></script> <!-- Script biglietti -->
+    <script src="../javascript/darkMode.js"></script>
+</body>
+</html>
